@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+nav,
+header {
+  font-family: "Roboto", sans-serif;
+}
+
+nav ul {
+  background-color: #129799;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 20px 0;
+}
+
+nav li a {
+  text-decoration: none;
+  color: white;
+}
+
+header {
+  background-color: #129799;
+  color: white;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  width: 40vh;
+  height: auto;
+}
+
+section {
+  background-color: #ffa185;
+  padding: 20px 0;
+}
+
+section h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+
+section p {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+section .images {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+section .images img {
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+section .more {
+  color: black;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+footer {
+  background-color: #129799;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+footer ul li {
+  margin: 0 10px; /* Adicionado para criar espaço ao redor dos itens da lista */
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  nav ul,
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section .images img {
+    width: 90%;
+  }
+}
